@@ -1,0 +1,31 @@
+<view class="auto">
+	<image class='background' mode="aspectFill" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190913%2Fd732af8a80d94a3dbf124232f180f3b8.gif&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636350612&t=f71deb677c2bb7a1b8dd5e749e7a8648" ></image>
+  <button bindtap="toBegin" style="width:44%; font-style: italic" class="button_1">Refind the passward</button>
+  <button bindtap="toBegin1" style="width:25%; font-style: italic"  class="button_2">Register</button>
+
+</view>
+<view class="content">
+<!-- 用户名 -->
+  <view class="username"> 
+  <view class="title"> ID：</view>
+    <view> 
+      <input class="input" bindinput="usernameInput" placeholder="User name/phone number" placeholder-style="color:#999999"/>
+    </view>
+  </view>
+  
+  <!-- 分割线 -->
+  <view class="hr"></view>
+  <!-- 密码 -->
+  <view class="username">
+    <view class="title">Password：</view>
+    <view>
+      <input class="input" bindinput="passwordInput" placeholder="Please input password" placeholder-style="color:#999999"/>
+    </view>
+  </view>
+
+  <!-- 登录按钮 -->
+  <!-- <navigator open-type="navigate" url="/pages/home/home"> -->
+    <button type="primary" style ="margin-top:400rpx;"  disabled="{{loginBtnState}}" bindtap="Login">LOGIN</button>
+  <!-- </navigator> -->
+  
+</view>

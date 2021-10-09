@@ -1,0 +1,44 @@
+<!--pages/phone/phone.wxml-->
+
+<form bindsubmit="formSubmit">
+  <view class="user">
+    <view class="hr"></view>
+    <view class="item">
+      <input type="text" name="name" placeholder="Please enter username" bindblur="rigsterUserBlur"/>
+    </view>
+    <view class="item">
+      <input type="text" name="pwd" placeholder="Please enter password" bindblur="rigsterPasswordrBlur"/>
+    </view>
+    <view class="item">
+      <input type="text"name="pwdAgain" placeholder="Please ensure password" bindblur="rigsterPasswordAgainBlur"/>
+    </view>
+  </view>
+  <view class="phoneUserInfo">
+    <view class="phone">
+      <input type="text" name="phone" placeholder="Phone number"/>
+    </view>
+    <view class="code">
+      Send auth code
+    </view>
+   </view>
+   <view class="item">
+    <input type="text" name="code" placeholder="Please enter auth code"/>
+   </view>
+   
+  <!-- 注册按钮 -->
+  <view>
+     <navigator open-type="navigate" url="/pages/Login/Login">   
+      <button class="registerBtn" type="primary" form-type="submit" style="width: 90%;">Register</button>
+     </navigator>
+  </view>
+
+  <!-- 同意协议 -->
+  <view>
+    <view class="protocol">
+      <icon type="success" color="red" size="18" ></icon>
+      <text class="agree">Agree</text>
+      <text class="options"> User Registration Agreement</text>
+    </view>
+  </view>
+</form>
+

@@ -1,0 +1,48 @@
+<!--pages/refind/refind.wxml-->
+<!--pages/phone/phone.wxml-->
+<view class="auto">
+
+</view>
+<form bindsubmit="formSubmit">
+
+  <view class="phoneUserInfo">
+    <view class="phone">
+      <input type="text" name="phone" placeholder="Phone number"/>
+    </view>
+    <view class="code">
+      Send auth code
+    </view>
+   </view>
+   <view class="item">
+    <input type="text" name="code" placeholder="Please enter auth code"/>
+   </view>
+  <view class="user">
+    <view class="hr"></view>
+ 
+    <view class="item">
+      <input type="text" name="pwd" placeholder="New password" bindblur="rigsterPasswordrBlur"/>
+    </view>
+    <view class="item">
+      <input type="text"name="pwdAgain" placeholder="Please ensure password" bindblur="rigsterPasswordAgainBlur"/>
+    </view>
+  </view>
+  
+   
+  <!-- 注册按钮 -->
+  <view>
+     <navigator open-type="navigate" url="/pages/Login/Login">   
+      <button class="registerBtn" type="primary" form-type="submit" style="width: 90%;">Confirm</button>
+     </navigator>
+  </view>
+
+  <!-- 同意协议 -->
+  <view>
+    <view class="protocol">
+      <icon type="success" color="red" size="18" ></icon>
+      <text class="agree">Agree</text>
+      <text class="options"> with the change</text>
+    </view>
+  </view>
+</form>
+
+

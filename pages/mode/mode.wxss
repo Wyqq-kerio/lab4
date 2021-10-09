@@ -1,0 +1,63 @@
+/* pages/home/home.wxss */
+
+.auto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.container{
+    position: absolute;
+    top: 550rpx;
+    left: 205rpx;
+    width: 350rpx;
+    height: 800rpx;
+    z-index: 0;
+}
+
+.button_1{
+    position:absolute;
+    top: 800rpx;
+    left: 110rpx;
+    
+    line-height: 60rpx;
+    border-radius: 20rpx;
+    height: 100rpx;
+    
+    font-size: 60rpx;
+    background-color: rgba(240, 238, 225, 0.5);
+}
+
+.button_2{
+    position:absolute;
+    top: 1070rpx;
+    left: 180rpx;
+    
+    line-height: 60rpx;
+    border-radius: 20rpx;
+    height: 100rpx;
+    
+    font-size: 60rpx;
+    background-color: rgb(240, 238, 225, 0.5);
+}
+.button_3{
+    position:absolute;
+    top: 35rpx;
+    left: 580rpx;
+    
+    line-height: 8rpx;
+    border-radius: 25rpx;
+    height: 40rpx;
+    
+    font-size: 25rpx;
+    background-color: rgba(240, 238, 225, 0.26);
+}
+.image{
+    width: 550rpx;
+    height: 800rpx;
+    margin-left: 5rpx;
+    margin-right: 5rpx;
+}

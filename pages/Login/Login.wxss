@@ -1,0 +1,84 @@
+/* pages/login/login.wxss */
+.auto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  .content{
+    margin-top: 600rpx;
+  }
+  .username{
+    display: flex;
+    flex-direction: row;
+    padding-left: 150rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    width: 100%;
+  }
+  .title{
+    width: 150rpx;
+    font-weight: hold;
+    color: rgb(243, 150, 12);
+  }
+  .hr{
+    border: 2rpx solid #cccccc;
+    width: 90%;
+    margin: 0 auto;
+    opacity: 0.3;
+  }
+  .register{
+    display: flex;
+    flex-direction: row;
+    padding-left: 140rpx;
+  
+  }
+  .refind{
+    display: flex;
+    flex-direction: row;
+    padding-left: 100rpx;
+  
+  }
+  .register view{
+    margin: 0,auto;
+    margin-top: 80rpx;
+    font-size: 30rpx;
+    color: #ec8106;
+  }
+  .background {
+    width: 100%;
+    height: 100%;
+    position:fixed; 
+    background-size:100% 100%;
+    z-index: -1;
+  }
+  .button_1{
+    position:absolute;
+    top: 1313rpx;
+    left: 350rpx;
+    
+    line-height: 15rpx;
+    border-radius: 20rpx;
+    height: 50rpx;
+    color: rgb(240, 134, 12);
+    font-size: 25rpx;
+    background-color: rgba(240, 238, 225, 0.5);
+}
+
+.button_2{
+    position:absolute;
+    top: 1313rpx;
+    left: 70rpx;
+    
+    line-height: 15rpx;
+    border-radius: 20rpx;
+    height: 50rpx;
+    color: rgb(240, 134, 12);
+    font-size: 25rpx;
+    background-color: rgb(240, 238, 225, 0.5);
+}
+  .input{
+    color: rgb(252, 101, 0);
+    font-size: 30rpx;
+  }

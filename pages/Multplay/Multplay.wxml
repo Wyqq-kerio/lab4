@@ -1,0 +1,7 @@
+<view class="auto">
+    <image style="width:100%;height:100%;" mode='aspectFill' src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190913%2Fd732af8a80d94a3dbf124232f180f3b8.gif&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636350612&t=f71deb677c2bb7a1b8dd5e749e7a8648"></image>
+</view>
+<view>
+    <button bindtap="toBegin" style="width:35%; font-style: italic" class="button_1">Creat</button>
+    <button bindtap="toBegin1" style="width:35%; font-style: italic"  class="button_2">Join</button>
+</view>

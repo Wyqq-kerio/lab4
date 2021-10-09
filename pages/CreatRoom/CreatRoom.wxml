@@ -1,0 +1,77 @@
+<view class="auto">
+    <image style="width:100%;height:100%;" mode='aspectFill' src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190913%2Fd732af8a80d94a3dbf124232f180f3b8.gif&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636350612&t=f71deb677c2bb7a1b8dd5e749e7a8648"></image>
+</view>
+<view>
+    <button bindtap="showWindows" style="width:20%; font-style: italic; color: rgb(255, 255, 255);" class="button_3">Rule</button>
+    <modal title="Rule" confirm-text="confirm" cancel-text="cancel" hidden="{{modalHidden}}"  bindconfirm="modalConfirm" bindcancel="modalCandel">
+    <view>
+      <image class="image" src="https://github.com/Miracle-Han/EE308/blob/main/rule.jpg?raw=true" ></image>
+    </view>
+    </modal>
+</view>
+<div class="flex0" style="width:200px; height: 30px;  display: flex;flex-flow: row; color:lightskyblue;">
+    <text class="text0">The Prize Set</text>
+</div>
+
+<div class="flex" style="width:410px; height: 44px;  display: flex;flex-flow: row;">
+    <text class="text1">Ju Ren</text>
+        <div style="text-align:center;vertical-align:middel;">
+            <input class="input1" id="username" type="text" placeholder="Please input the Prizes' name"/>
+        </div>
+        <div style="text-align:center;;right: 50rpx;">
+            <input class="input2" id="username" type="number" placeholder="amount"/>
+        </div>
+</div>
+<div class="flex1" style="width:410px; height: 44px;  display: flex;flex-flow: row;">
+    <text class="text1">Tan Hua</text>
+        <div style="text-align:center;vertical-align:middel;">
+            <input class="input1" id="username" type="text" placeholder="Please input the Prizes' name"/>
+        </div>
+        <div style="text-align:center;;right: 50rpx;">
+            <input class="input2" id="username" type="number" placeholder="amount"/>
+        </div>
+</div>
+<div class="flex2" style="width:410px; height: 44px;  display: flex;flex-flow: row;">
+    <text class="text1">Jin Shi</text>
+        <div style="text-align:center;vertical-align:middel;">
+            <input class="input1" id="username" type="text" placeholder="Please input the Prizes' name"/>
+        </div>
+        <div style="text-align:center;;right: 50rpx;">
+            <input class="input2" id="username" type="number" placeholder="amount"/>
+        </div>
+</div>
+<div class="flex3" style="width:410px; height: 44px;  display: flex;flex-flow: row;">
+    <text class="text1">Bang Yan</text>
+        <div style="text-align:center;vertical-align:middel;">
+            <input class="input1" id="username" type="text" placeholder="Please input the Prizes' name"/>
+        </div>
+        <div style="text-align:center;;right: 50rpx;">
+            <input class="input2" id="username" type="number" placeholder="amount"/>
+        </div>
+</div>
+<div class="flex4" style="width:410px; height: 44px;  display: flex;flex-flow: row;">
+    <text class="text1">Tan Hua</text>
+        <div style="text-align:center;vertical-align:middel;">
+            <input class="input1" id="username" type="text" placeholder="Please input the Prizes' name"/>
+        </div>
+        <div style="text-align:center;;right: 50rpx;">
+            <input class="input2" id="username" type="number" placeholder="amount"/>
+        </div>
+</div>
+<div class="flex5" style="width:410px; height: 44px;  display: flex;flex-flow: row;">
+    <text class="text2">Zhuang Yuan</text>
+        <div style="text-align:center;vertical-align:middel;">
+            <input class="input1" id="username" type="text" placeholder="Please input the Prizes' name"/>
+        </div>
+        <div style="text-align:center;;right: 50rpx;">
+            <input class="input2" id="username" type="number" placeholder="amount"/>
+        </div>
+</div>
+<view class="view">
+    <button bindtap="modalinput" class="button_1">Continue</button>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="Please Input the nambers of Players"
+   			confirm-text="Contuine" cancel-text="Cancel" bindcancel="modalinput" 
+   			bindconfirm="confirm">
+               <input bindinput="people" name='value' type='number' placeholder="input" auto-focus/>
+</modal>

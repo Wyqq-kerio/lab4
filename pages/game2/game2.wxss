@@ -1,0 +1,133 @@
+.auto{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.other-widget{
+    position: absolute;
+}
+.button_3{
+    position:absolute;
+    top: 35rpx;
+    left: 580rpx;
+    
+    line-height: 8rpx;
+    border-radius: 25rpx;
+    height: 40rpx;
+    
+    font-size: 25rpx;
+    background-color: rgba(240, 238, 225, 0.26);
+}
+.button_4{
+    position:absolute;
+    top: 100rpx;
+    left: 580rpx;
+	
+    line-height: 8rpx;
+    border-radius: 25rpx;
+    height: 40rpx;
+    
+    font-size: 25rpx;
+    background-color: rgba(240, 238, 225, 0.26);
+}
+.button_6{
+    position:absolute;
+    top: 35rpx;
+    left: 10rpx;
+    
+    line-height: 8rpx;
+    border-radius: 25rpx;
+    height: 40rpx;
+    
+    font-size: 25rpx;
+    background-color: rgba(240, 238, 225, 0.26);
+}
+.image{
+    width: 550rpx;
+    height: 800rpx;
+    margin-left: 5rpx;
+    margin-right: 5rpx;
+}
+.title{
+    top: 10rpx;
+	margin: 10rpx;
+	text-align: center;
+	font-size: 35rpx;
+	font-style: italic;
+	font-weight: bold
+}
+
+.settings{
+	margin: 15rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center
+}
+
+.body{
+	margin: 15rpx;
+	height: 450rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center
+}
+
+.diceListItem{
+	width: 100rpx;
+	height: 100rpx;
+	position: absolute;
+	left: 300rpx;
+	top: -350rpx
+}
+
+.result{
+	margin: 15rpx;
+	display: flex;
+	flex-direction: column
+}
+
+.countSum{
+	align-self: center;
+	font-size: 40rpx;
+	font-weight: bold;
+	font-family: SimSun;
+	padding: 15rpx
+}
+
+.countList{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 50rpx;
+}
+
+.countListItem{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.container{
+    position:relative;
+}
+.other-widget{
+    position: absolute;
+}
+
+.button_5{
+    position:absolute;
+    top: 30rpx;
+	left: 180rpx;
+	color: rgb(31, 132, 190);
+    line-height: 20rpx;
+    border-radius: 40rpx;
+    height: 50rpx;
+    
+    font-size: 35rpx;
+    background-color: rgba(237, 242, 243, 0.747);
+}
+

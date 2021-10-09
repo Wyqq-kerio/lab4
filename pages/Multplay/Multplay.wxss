@@ -1,0 +1,32 @@
+.auto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.button_1{
+    position:absolute;
+    top: 800rpx;
+    left: 223rpx;
+    
+    line-height: 60rpx;
+    border-radius: 20rpx;
+    height: 100rpx;
+    
+    font-size: 60rpx;
+    background-color: rgba(240, 238, 225, 0.5);
+}
+
+.button_2{
+    position:absolute;
+    top: 1070rpx;
+    left: 223rpx;
+    
+    line-height: 60rpx;
+    border-radius: 20rpx;
+    height: 100rpx;
+    
+    font-size: 60rpx;
+    background-color: rgb(240, 238, 225, 0.5);
+}
