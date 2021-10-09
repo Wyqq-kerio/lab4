@@ -3,5 +3,10 @@
 </view>
 <view>
     <button bindtap="toBegin" style="width:35%; font-style: italic" class="button_1">Creat</button>
-    <button bindtap="toBegin1" style="width:35%; font-style: italic"  class="button_2">Join</button>
+    <button bindtap="modalinput" style="width:35%; font-style: italic"  class="button_2">Join</button>
 </view>
+<modal hidden="{{hiddenmodalput}}" title="Please Input the name of The Room"
+   			confirm-text="Contuine" cancel-text="Cancel" bindcancel="modalinput" 
+   			bindconfirm="confirm">
+               <input bindinput="people" name='value' type='number' placeholder="input" auto-focus/>
+</modal>

@@ -25,7 +25,7 @@
 
 .body{
 	margin: 15rpx;
-	height: 450rpx;
+	height: 350rpx;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -83,7 +83,7 @@
 
 .button_3{
     position:absolute;
-    top: 35rpx;
+    top: 160rpx;
     left: 580rpx;
     
     line-height: 8rpx;

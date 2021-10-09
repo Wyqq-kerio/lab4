@@ -32,6 +32,7 @@ Page({
             modalHidden: true
          })
    },
+
     toBegin: function (params) {
       wx.navigateTo({
         url: '../game/game',

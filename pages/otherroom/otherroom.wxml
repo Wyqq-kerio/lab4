@@ -4,7 +4,7 @@
 </view>
 <view class="container"> 
 <view>
-    <button style="width:50%; font-style: italic" class="button_5">Mircale's Room</button>
+    <button style="width:50%; font-style: italic" class="button_5">Player's Room</button>
     <button bindtap="showWindows" style="width:20%; font-style: italic; color: white;" class="button_3">Rule</button>
     
     <modal title="Rule" confirm-text="confirm" cancel-text="cancel" hidden="{{modalHidden}}"  bindconfirm="modalConfirm" bindcancel="modalCandel">
@@ -17,6 +17,13 @@
     <modal title="Record" confirm-text="confirm" cancel-text="cancel" hidden="{{modalHidden1}}"  bindconfirm="modalConfirm1" bindcancel="modalCandel1">
     <view>
       <image class="image" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202001%2F14%2F20200114150234_n25uP.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636374602&t=025faa20732b505b0d70c53729eb1da2" ></image>
+    </view>
+    </modal>
+
+    <button bindtap="showWindows2" style="width:20%; font-style: italic; color: white; " class="button_6">Prize</button>
+    <modal title="Prize" confirm-text="confirm" cancel-text="cancel" hidden="{{modalHidden2}}"  bindconfirm="modalConfirm2" bindcancel="modalCandel2">
+    <view>
+      <image class="image" src="https://img0.baidu.com/it/u=1818565797,1873552443&fm=26&fmt=auto" ></image>
     </view>
     </modal>
 </view>

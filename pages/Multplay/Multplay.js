@@ -5,14 +5,15 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+      hiddenmodalput: true,
+      value:2312312,
     },
     toBegin: function (params) {
         wx.navigateTo({
           url: '../CreatRoom/CreatRoom',
         })
-      },
-      toBegin1: function (params) {
+    },
+    toBegin1: function (params) {
         wx.navigateTo({
           url: '../Multplay/Multplay',
         })
@@ -71,5 +72,20 @@ Page({
      */
     onShareAppMessage: function () {
 
-    }
+    },
+    modalinput: function () {
+      this.setData({
+        //注意到模态框的取消按钮也是绑定的这个函数，
+        hiddenmodalput: !this.data.hiddenmodalput
+      })
+    },
+    confirm:function (params) {
+      wx.setStorage({
+        key:'number',
+        data:this.data.value
+      })
+      wx.navigateTo({
+        url: '../otherroom/otherroom',
+      })
+    },
 })

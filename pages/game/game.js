@@ -7,44 +7,69 @@ Page({
   data: {
     pickerRange:[1,2,3,4,5,6,7,8,9],  //最多9个最少1个骰子，注意如果拓展到十几甚至几十个，将导致下方whetherOverlap反复执行甚至死循环
     number:6,                         //初始指定5个骰子
-    switchText:'隐藏骰子',
+    switchText:'CLEAR',
     diceList:[],
     countList:['?','?','?','?','?','?'],
     countSum:'???',
     clicked:false,                     //用于指示是否已经开始执行
-    modalHidden:true                    //是否隐藏对话框
+    modalHidden:true,
+    modalHidden1:true                        
   },
   showWindows: function() {
-      this.setData({
-         modalHidden: false
-      })
-      },
+    this.setData({
+       modalHidden: false
+    })
+    },
 
-  /**
-   * 点击cancel
-   */
-      modalCandel: function(){
-         // do something
-         this.setData({
-          modalHidden: true
-       })
-      },
-
-  /**
-   *  点击确认
-   */
-        modalConfirm: function() {
+/**
+ * 点击cancel
+ */
+    modalCandel: function(){
        // do something
        this.setData({
-          modalHidden: true
-       })
- },
-  toBegin: function (params) {
-    wx.navigateTo({
-      url: '../game/game',
-    })
-  },
+        modalHidden: true
+     })
+    },
 
+/**
+ *  点击确认
+ */
+      modalConfirm: function() {
+     // do something
+     this.setData({
+        modalHidden: true
+     })
+},
+showWindows1: function() {
+this.setData({
+   modalHidden1: false
+})
+},
+
+/**
+* 点击cancel
+*/
+modalCandel1: function(){
+   // do something
+   this.setData({
+    modalHidden1: true
+ })
+},
+
+/**
+*  点击确认
+*/
+  modalConfirm1: function() {
+ // do something
+ this.setData({
+    modalHidden1: true
+ })
+},
+toBegin: function (params) {
+  wx.navigateTo({
+    url: '../game/game',
+  })
+},
   onLoad: function (options) {
     //摇一摇
     util.shake(this.play)
@@ -69,25 +94,7 @@ Page({
   },
 
   onPullDownRefresh: function () {
-    var switchText = this.data.switchText
-    switchText = '隐藏骰子'
-    this.setData({
-      switchText:switchText,
-    }),
-    wx.showLoading({
-      title:'UpDate',
-      mask:true,
-      duration:1000
-    })
-    wx.stopPullDownRefresh({
-      success: function(res) {
-        switchText = '展示骰子'
-        this.setData({
-          switchText:switchText,
-          clicked:false
-        })
-      }
-    })
+
   },
 
   onReachBottom: function () {
@@ -101,11 +108,11 @@ Page({
   //用户点击switchText
   changeSwitch:function(){
     var switchText = this.data.switchText
-    if(switchText == '隐藏骰子'){
-      switchText = '展示骰子'
+    if(switchText == 'CLEAR'){
+      switchText = 'TRY AGAIN'
     }
     else{
-      switchText = '隐藏骰子'
+      switchText = 'CLEAR'
     }
     this.setData({
       switchText:switchText,
@@ -126,7 +133,7 @@ Page({
     var that = this
     //先判断clicked的值，若为true说明正在动画中，不再摇骰子；若为false则继续
     //同时判断switchText的值，当用户隐藏时，不再摇骰子，相当于暂时关闭了摇一摇功能
-    if(that.data.clicked || that.data.switchText == '展示骰子'){
+    if(that.data.clicked || that.data.switchText == 'TRY AGAIN'){
       return
     }
     else{
@@ -221,13 +228,6 @@ Page({
     return valueList
   },
 
-  congfun:function(countList){
-    if(countList[3]==0||countList[3]==1||countList[3]==2||countList[3]==3||countList[3]==4||countList[3]==5||countList[3]==6){
-      wx.showToast({
-        title: 'title',
-      })
-    }
-  },
   //根据骰子的最终位置和旋转角度创建动画数据
   createAnimationData:function(left,top,rotate){
     var animation = wx.createAnimation({
@@ -248,4 +248,7 @@ Page({
       clicked:false
     })
   }
+
 })
+
+
